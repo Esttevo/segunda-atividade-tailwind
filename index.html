@@ -66,7 +66,7 @@
       to-gray-200
       ">
         <div>
-          <div class="flex flex-col items-center">
+          <div class="grid grid-cols-2 items-center">
             <!-- Coluna 1: Conteúdo Textual -->
             <div class="flex flex-col items-center">
               <span
@@ -184,8 +184,8 @@
             </p>
           </div>
 
-          <div class="flex flex-col gap-8">
-            <article class="flex flex-col bg-gray-100/50 p-4 rounded-lg border border-gray-200 gap-3">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <article class="flex flex-col bg-gray-100/50 p-4 rounded-lg border border-gray-200 gap-3 transition shadow hover:bg-gray-100 hover:inset-shadow-2xs ">
               <div class="bg-blue-200/60 max-w-fit p-2 rounded-lg">⚙️</div>
               <h3 class="font-bold">Nível de Rendimento IE5</h3>
               <p class="text-gray-600 text-sm">
@@ -195,7 +195,7 @@
               </p>
             </article>
 
-            <article class="flex flex-col bg-gray-100/50 p-4 rounded-lg border border-gray-200 gap-3">
+            <article class="flex flex-col bg-gray-100/50 p-4 rounded-lg border border-gray-200 gap-3 transition shadow hover:bg-gray-100 hover:inset-shadow-2xs ">
               <div class="bg-blue-200/60 max-w-fit p-2 rounded-lg">📡</div>
               <h3 class="font-bold">Módulo IoT Plug & Play</h3>
               <p class="text-gray-600 text-sm">
@@ -205,7 +205,7 @@
               </p>
             </article>
 
-            <article class="flex flex-col bg-gray-100/50 p-4 rounded-lg border border-gray-200 gap-3">
+            <article class="flex flex-col bg-gray-100/50 p-4 rounded-lg border border-gray-200 gap-3 transition shadow hover:bg-gray-100 hover:inset-shadow-2xs ">
               <div class="bg-blue-200/60 max-w-fit p-2 rounded-lg">🛡️</div>
               <h3 class="font-bold">Grau de Proteção IP66 / W3</h3>
               <p class="text-gray-600 text-sm">
@@ -226,7 +226,7 @@
     =========================================== -->
       <section id="metricas">
         <div class="bg-slate-900/95 text-gray-300 py-12 px-4 items-center">
-          <div class="grid grid-cols-2 gap-8">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="flex flex-col text-center gap-2 border-t border-gray-700 pt-4">
               <div class="font-black text-3xl text-blue-300">-70%</div>
               <div class="text-xs">Paradas Não Planejadas</div>
@@ -262,7 +262,7 @@
             </p>
           </div>
 
-          <div class="flex flex-col gap-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div class="flex flex-col gap-1 border border-gray-300 rounded-lg p-4">
               <span class="text-blue-800 font-semibold text-sm">Mineração</span>
               <h4 class="font-bold">Correias & Britadores</h4>
@@ -312,7 +312,7 @@
     =========================================== -->
       <section id="novidades" class="flex flex-col border-b border-gray-200">
         <div class="bg-gray-100/70 px-4 py-12">
-          <div class="flex flex-col gap-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="flex flex-col gap-2">
               <span class="text-blue-700 font-semibold text-sm">SALA DE IMPRENSA & ARTIGOS</span>
               <h2 class="font-black text-3xl">Últimas notícias WEG SyncDrive</h2>
@@ -320,7 +320,7 @@
             <a class="text-blue-700 text-sm" href="#">Ver central de notícias →</a>
           </div>
 
-          <div class="flex flex-col gap-6">
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             <!-- Notícia 1 -->
             <article class="min-w-full bg-white border border-gray-200 rounded-lg">
               <div class="flex justify-center align-center bg-gradient-to-br from-blue-700 to-slate-700 py-14 text-3xl rounded-t-lg">⚙️</div>
@@ -429,10 +429,10 @@
             </p>
           </div>
 
-          <form class="flex flex-col bg-gray-100 ">
-            <div class="flex flex-col gap-4 p-8">
+          <form class="flex flex-col bg-gray-100 border border-gray-200 rounded-lg p-8 gap-4">
+            <div class="flex flex-col gap-4 ">
               <div class="flex flex-col gap-1">
-                <label class="font-semibold text-gray-700">Nome Completo</label>
+                <label class=" font-semibold text-gray-700">Nome Completo</label>
                 <input class="bg-white border border-gray-300 p-2 px-4 min-w-full rounded" type="text" placeholder="Eng. Carlos Silva" />
               </div>
               <div class="flex flex-col gap-1">
@@ -441,7 +441,7 @@
               </div>
             </div>
 
-            <div class="flex flex-col gap-4 p-8">
+            <div class="flex flex-col gap-4">
               <div class="flex flex-col gap-1">
                 <label class="font-semibold text-gray-700">Segmento da Planta</label>
                 <select class="bg-white border border-gray-300 p-2 px-4 min-w-full rounded">
@@ -458,7 +458,7 @@
               </div>
             </div>
 
-            <button type="submit">
+            <button class="bg-blue-700 text-white font-bold py-2 rounded" type="submit">
               Solicitar Contato da Engenharia de Aplicação
             </button>
           </form>
