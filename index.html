@@ -310,7 +310,7 @@
          - Imagem/banner visual com gradiente em cada notícia.
          - Flexbox nos cards para fixar o link de leitura no rodapé.
     =========================================== -->
-      <section id="novidades ">
+      <section id="novidades" class="flex flex-col border-b border-gray-200">
         <div class="bg-gray-100/70 px-4 py-12">
           <div class="flex flex-col gap-4">
             <div class="flex flex-col gap-2">
@@ -420,31 +420,31 @@
          - Grid de formulário com campos em 2 colunas no desktop.
     =========================================== -->
       <section id="contato">
-        <div class="flex flex-col">
-          <div class="flex flex-col">
-            <h2>Dimensione seu motor com nossos especialistas</h2>
-            <p>
+        <div class="flex flex-col px-4 py-14 gap-8">
+          <div class="flex flex-col gap-2">
+            <h2 class="text-3xl font-bold text-center">Dimensione seu motor com nossos especialistas</h2>
+            <p class="text-gray-500 text-center">
               Preencha os dados da sua aplicação e receba o estudo de payback e
               eficiência.
             </p>
           </div>
 
-          <form>
-            <div>
-              <div>
-                <label>Nome Completo</label>
-                <input type="text" placeholder="Eng. Carlos Silva" />
+          <form class="flex flex-col bg-gray-100 ">
+            <div class="flex flex-col gap-4 p-8">
+              <div class="flex flex-col gap-1">
+                <label class="font-semibold text-gray-700">Nome Completo</label>
+                <input class="bg-white border border-gray-300 p-2 px-4 min-w-full rounded" type="text" placeholder="Eng. Carlos Silva" />
               </div>
-              <div>
-                <label>E-mail Corporativo</label>
-                <input type="email" placeholder="carlos@industria.com.br" />
+              <div class="flex flex-col gap-1">
+                <label class="font-semibold text-gray-700">E-mail Corporativo</label>
+                <input class="bg-white border border-gray-300 p-2 px-4 min-w-full rounded" type="email" placeholder="carlos@industria.com.br" />
               </div>
             </div>
 
-            <div>
-              <div>
-                <label>Segmento da Planta</label>
-                <select>
+            <div class="flex flex-col gap-4 p-8">
+              <div class="flex flex-col gap-1">
+                <label class="font-semibold text-gray-700">Segmento da Planta</label>
+                <select class="bg-white border border-gray-300 p-2 px-4 min-w-full rounded">
                   <option>Mineração e Siderurgia</option>
                   <option>Papel e Celulose</option>
                   <option>Saneamento e Água</option>
@@ -452,9 +452,9 @@
                   <option>Alimentos e Bebidas</option>
                 </select>
               </div>
-              <div>
-                <label>Potência Estimada (kW/cv)</label>
-                <input type="text" placeholder="Ex: 75 kW / 100 cv" />
+              <div class="flex flex-col gap-1">
+                <label class="font-semibold text-gray-700">Potência Estimada (kW/cv)</label>
+                <input class="bg-white border border-gray-300 p-2 px-4 min-w-full rounded" type="text" placeholder="Ex: 75 kW / 100 cv" />
               </div>
             </div>
 
