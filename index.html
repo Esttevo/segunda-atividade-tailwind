@@ -473,25 +473,25 @@
        - Layout corporativo com tipografia sutil.
        - Disposição em flexbox responsivo (colunas empilhadas no mobile, linha no desktop).
   =========================================== -->
-    <footer>
+    <footer class="flex flex-col px-4 bg-slate-900 text-white py-12">
       <div>
-        <div>
-          <div>
-            <div>WEG</div>
-            <span>Transformando energia em soluções.</span>
+        <div class="flex flex-col lg:flex-row gap-4 border-b border-gray-700 pb-8 justify-around lg:flex-row">
+          <div class="flex justify-center gap-4">
+            <div class="bg-blue-700 max-w-fit p-1 rounded-md text-sm font-black">WEG</div>
+            <span class="font-semibold self-center text-sm">Transformando energia em soluções.</span>
           </div>
-          <div>
+          <div class="flex text-gray-400 font-semibold text-left justify-center gap-4 ">
             <a href="#">Catálogos Técnicos</a>
             <a href="#">Assistências Técnicas</a>
             <a href="#">Portal do Cliente</a>
           </div>
         </div>
-        <div>
-          <p>
+        <div class="flex flex-col text-gray-600 pt-8 gap-4 md:text-center lg:flex-row justify-around">
+          <p class="text-xs ">
             © 2026 WEG Equipamentos Elétricos S.A. Todos os direitos reservados.
             (Projeto Fictício para Fins Didáticos).
           </p>
-          <div>
+          <div class="flex text-xs justify-center gap-4">
             <a href="#">Termos de Uso</a>
             <a href="#">Privacidade de Dados</a>
           </div>
