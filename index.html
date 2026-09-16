@@ -15,7 +15,7 @@
        - Menu oculto em telas pequenas e visível em lg:.
   =========================================== -->
     <header
-      class="flex sticky top-0 p-4 py-2 bg-white/90 border-b border-gray-200 mb-16"
+      class="flex sticky top-0 p-4 xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)] py-2 bg-white/90 border-b border-gray-200 mb-16"
     >
       <div class="flex justify-between align-center min-w-full">
         <div class="flex items-center gap-3">
@@ -31,7 +31,7 @@
           </div>
         </div>
 
-        <nav class="hidden">
+        <nav class="hidden lg:flex gap-[clamp(1rem,2vw,2rem)] text-gray-600 items-center">
           <a href="#solucao">A Solução</a>
           <a href="#recursos">Tecnologia</a>
           <a href="#metricas">Performance</a>
@@ -39,8 +39,8 @@
           <a href="#novidades">Notícias</a>
         </nav>
 
-        <div class="flex items-center">
-          <a class="hidden" href="#contato">Falar com Consultor</a>
+        <div class="flex items-center gap-4 text-gray-600">
+          <a class="hidden lg:flex bg-white " href="#contato">Falar com Consultor</a>
           <a
             class="bg-blue-700 text-white rounded p-2 px-3 hover:bg-blue-900"
             href="#contato"
@@ -61,14 +61,15 @@
     =========================================== -->
       <section id="solucao" class="flex 
       p-4 pb-12
+      2xl:p-0
       bg-linear-to-b
       from-white
-      to-gray-200
+      to-gray-200 lg:pb-22 
       ">
         <div>
-          <div class="grid grid-cols-2 items-center">
+          <div class="grid justify-items-center lg:grid-cols-[1.7fr_1.3fr] items-center xl:px-[clamp(5rem,10vw,15rem)] gap-16 2xl:px-[clamp(6rem,16vw,40rem)] lg:pb-22">
             <!-- Coluna 1: Conteúdo Textual -->
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center lg:items-start">
               <span
                 class="text-blue-700 
                 bg-blue-700/10 
@@ -81,8 +82,8 @@
               <h1
                 class="text-black 
                 font-black 
-                text-4xl 
-                text-center 
+                text-4xl lg:text-6xl lg:leading-16
+                text-center lg:text-left
                 tracking-tighter 
                 leading-11"
               >
@@ -91,23 +92,23 @@
               </h1>
 
               <p class="text-gray-600 
-              text-center 
-              py-6">
+              text-center
+              lg:text-left
+              py-6 lg:pr-20">
                 O motor elétrico síncrono que combina rendimento ultra-premium
                 (IE5), sensoriamento integrado de vibração e temperatura e
                 conectividade instantânea com a nuvem WEG IoT.
               </p>
 
-              <div class="flex 
-              flex-col 
-              gap-3 
-              min-w-full 
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-3
+              min-w-full lg:min-w-fit 
               text-center">
 
                 <a
                   class="bg-blue-700 
                   text-white 
                   min-w-full 
+                  lg:min-w-[clamp(14rem,12vw,30rem)] lg:max-w-[clamp(14rem,12vw,30rem)]
                   py-3 rounded"
                   href="#contato"
 
@@ -115,7 +116,7 @@
                 >
 
                 <a class="border 
-                border-gray-200 
+                border-gray-200 bg-white lg:min-w-[clamp(14rem,12vw,30rem)] lg:max-w-[clamp(14rem,12vw,30rem)]
                 py-3 
                 rounded" href="#recursos"
 
@@ -125,11 +126,11 @@
             </div>
 
             <!-- Coluna 2: Card de Telemetria IoT -->
-            <div class="flex bg-slate-900 text-white mt-10 p-6 border rounded-xl">
-              <div>
+            <div class="flex bg-slate-900 text-white mt-10 p-6 border rounded-xl max-w-fit lg:max-w-full lg:min-w-full lg:m-0">
+              <div class="flex flex-col lg:min-w-full">
                 <div class="flex items-center justify-between
                 border-b border-slate-800
-                pb-4
+                pb-4 lg:min-w-full
                 ">
                   <span class="text-blue-400 text-xs">NODE_ID: WEG-MTR-8842</span>
                   <div>
@@ -139,13 +140,13 @@
                 </div>
 
                 <div class="pt-4">
-                  <div class="bg-slate-800 mb-4 p-4 rounded-xl">
+                  <div class="bg-slate-800 mb-4 p-4 rounded-xl lg:min-w-full">
                     <span class="text-gray-400 text-xs">Eficiência Energética</span>
                     <div class="font-black text-xl">96.8% <span class="font-normal text-xs text-green-300">(Padrão IE5)</span></div>
                   </div>
 
                   <div class="flex gap-3 justify-between">
-                    <div class="bg-slate-800 p-4 rounded-xl w-1/2">
+                    <div class="bg-slate-800 p-4 rounded-xl w-1/2 ">
                       <span class="text-gray-400 text-xs">Vibração RMS</span>
                       <div class="font-semibold text-lg">0.82 mm/s</div>
                       <span class="font-normal text-xs text-green-300">✓ Faixa Ideal ISO</span>
@@ -174,8 +175,8 @@
          - Grid responsivo de 3 colunas (1 col mobile, 3 cols desktop).
          - Efeito hover nos cards com transição suave de borda ou sombra.
     =========================================== -->
-      <section id="recursos" class="flex flex-col py-12">
-        <div class="flex flex-col px-4 gap-8">
+      <section id="recursos" class="flex flex-col py-12 ">
+        <div class="flex flex-col px-4 gap-8 xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)">
           <div class="flex flex-col items-center gap-4">
             <h2 class="font-extrabold text-3xl text-center">Engenharia pensada para regime contínuo</h2>
             <p class="text-gray-600 text-center">
@@ -225,7 +226,7 @@
          - Grid de 2 colunas no mobile e 4 colunas em telas maiores.
     =========================================== -->
       <section id="metricas">
-        <div class="bg-slate-900/95 text-gray-300 py-12 px-4 items-center">
+        <div class="bg-slate-900/95 text-gray-300 py-12 px-4 items-center xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)">
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="flex flex-col text-center gap-2 border-t border-gray-700 pt-4">
               <div class="font-black text-3xl text-blue-300">-70%</div>
@@ -254,7 +255,7 @@
          - Uso de tags de categoria uppercase com tipografia reduzida.
     =========================================== -->
       <section id="aplicacoes" class="border-b border-gray-200">
-        <div class="flex flex-col px-4 py-12 gap-10">
+        <div class="flex flex-col px-4 py-12 gap-10 xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)">
           <div class="flex flex-col text-center gap-2">
             <h2 class="font-bold text-2xl text-slate-900">Projetado para indústrias críticas</h2>
             <p class="text-gray-500">
@@ -311,7 +312,7 @@
          - Flexbox nos cards para fixar o link de leitura no rodapé.
     =========================================== -->
       <section id="novidades" class="flex flex-col border-b border-gray-200">
-        <div class="bg-gray-100/70 px-4 py-12">
+        <div class="bg-gray-100/70 px-4 py-12 xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="flex flex-col gap-2">
               <span class="text-blue-700 font-semibold text-sm">SALA DE IMPRENSA & ARTIGOS</span>
@@ -420,7 +421,7 @@
          - Grid de formulário com campos em 2 colunas no desktop.
     =========================================== -->
       <section id="contato">
-        <div class="flex flex-col px-4 py-14 gap-8">
+        <div class="flex flex-col px-4 py-14 gap-8 xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)">
           <div class="flex flex-col gap-2">
             <h2 class="text-3xl font-bold text-center">Dimensione seu motor com nossos especialistas</h2>
             <p class="text-gray-500 text-center">
