@@ -40,9 +40,9 @@
         </nav>
 
         <div class="flex items-center gap-4 text-gray-600">
-          <a class="hidden lg:flex bg-white " href="#contato">Falar com Consultor</a>
+          <a class="hidden lg:flex " href="#contato">Falar com Consultor</a>
           <a
-            class="bg-blue-700 text-white rounded p-2 px-3 hover:bg-blue-900"
+            class="bg-blue-700 text-white rounded p-2 px-3 hover:bg-blue-900 transition"
             href="#contato"
           >
             Especificar Motor
@@ -105,7 +105,7 @@
               text-center">
 
                 <a
-                  class="bg-blue-700 
+                  class="bg-blue-700 hover:bg-blue-900 transition
                   text-white 
                   min-w-full 
                   lg:min-w-[clamp(14rem,12vw,30rem)] lg:max-w-[clamp(14rem,12vw,30rem)]
@@ -115,7 +115,7 @@
                   >Solicitar Folha de Dados</a
                 >
 
-                <a class="border 
+                <a class="border hover:bg-gray-300 transition
                 border-gray-200 bg-white lg:min-w-[clamp(14rem,12vw,30rem)] lg:max-w-[clamp(14rem,12vw,30rem)]
                 py-3 
                 rounded" href="#recursos"
@@ -176,7 +176,7 @@
          - Efeito hover nos cards com transição suave de borda ou sombra.
     =========================================== -->
       <section id="recursos" class="flex flex-col py-12 ">
-        <div class="flex flex-col px-4 gap-8 xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)">
+        <div class="flex flex-col px-4 gap-8 xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)]">
           <div class="flex flex-col items-center gap-4">
             <h2 class="font-extrabold text-3xl text-center">Engenharia pensada para regime contínuo</h2>
             <p class="text-gray-600 text-center">
@@ -226,7 +226,7 @@
          - Grid de 2 colunas no mobile e 4 colunas em telas maiores.
     =========================================== -->
       <section id="metricas">
-        <div class="bg-slate-900/95 text-gray-300 py-12 px-4 items-center xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)">
+        <div class="bg-slate-900/95 text-gray-300 py-12 px-4 items-center xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)]">
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div class="flex flex-col text-center gap-2 border-t border-gray-700 pt-4">
               <div class="font-black text-3xl text-blue-300">-70%</div>
@@ -255,7 +255,7 @@
          - Uso de tags de categoria uppercase com tipografia reduzida.
     =========================================== -->
       <section id="aplicacoes" class="border-b border-gray-200">
-        <div class="flex flex-col px-4 py-12 gap-10 xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)">
+        <div class="flex flex-col px-4 py-12 gap-10 xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)]">
           <div class="flex flex-col text-center gap-2">
             <h2 class="font-bold text-2xl text-slate-900">Projetado para indústrias críticas</h2>
             <p class="text-gray-500">
@@ -264,7 +264,7 @@
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="flex flex-col gap-1 border border-gray-300 rounded-lg p-4">
+            <div class="flex flex-col gap-1 bg-gray-100/70 hover:bg-gray-200 transition border border-gray-300 rounded-lg p-4">
               <span class="text-blue-800 font-semibold text-sm">Mineração</span>
               <h4 class="font-bold">Correias & Britadores</h4>
               <p class="text-gray-500 text-xs">
@@ -273,7 +273,7 @@
               </p>
             </div>
 
-            <div class="flex flex-col gap-1 border border-gray-300 rounded-lg p-4">
+            <div class="flex flex-col gap-1 bg-gray-100/70 hover:bg-gray-200 transition border border-gray-300 rounded-lg p-4">
               <span class="text-blue-800 font-semibold text-sm">Saneamento</span>
               <h4 class="font-bold">Estações de Bombeamento</h4>
               <p class="text-gray-500 text-xs">
@@ -282,7 +282,7 @@
               </p>
             </div>
 
-            <div class="flex flex-col gap-1 border border-gray-300 rounded-lg p-4">
+            <div class="flex flex-col gap-1 bg-gray-100/70 hover:bg-gray-200 transition border border-gray-300 rounded-lg p-4">
               <span class="text-blue-800 font-semibold text-sm">Papel & Celulose</span>
               <h4 class="font-bold">Secadores e Bobinadeiras</h4>
               <p class="text-gray-500 text-xs">
@@ -291,7 +291,7 @@
               </p>
             </div>
 
-            <div class="flex flex-col gap-1 border border-gray-300 rounded-lg p-4">
+            <div class="flex flex-col gap-1 bg-gray-100/70 hover:bg-gray-200 transition border border-gray-300 rounded-lg p-4">
               <span class="text-blue-800 font-semibold text-sm">Agroindústria</span>
               <h4 class="font-bold">Silos & Ventiladores</h4>
               <p class="text-gray-500 text-xs">
@@ -311,14 +311,14 @@
          - Imagem/banner visual com gradiente em cada notícia.
          - Flexbox nos cards para fixar o link de leitura no rodapé.
     =========================================== -->
-      <section id="novidades" class="flex flex-col border-b border-gray-200">
-        <div class="bg-gray-100/70 px-4 py-12 xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)">
+      <section id="novidades" class="flex flex-col border-b border-gray-200 ">
+        <div class="flex flex-col gap-12 bg-gray-100/70 px-4 py-12  xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)]">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="flex flex-col gap-2">
               <span class="text-blue-700 font-semibold text-sm">SALA DE IMPRENSA & ARTIGOS</span>
               <h2 class="font-black text-3xl">Últimas notícias WEG SyncDrive</h2>
             </div>
-            <a class="text-blue-700 text-sm" href="#">Ver central de notícias →</a>
+            <a class="text-blue-700 text-sm lg:justify-self-end lg:self-end" href="#">Ver central de notícias →</a>
           </div>
 
           <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -420,8 +420,8 @@
          - Inputs estilizados com focus rings.
          - Grid de formulário com campos em 2 colunas no desktop.
     =========================================== -->
-      <section id="contato">
-        <div class="flex flex-col px-4 py-14 gap-8 xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)">
+      <section class="flex flex-col items-center" id="contato">
+        <div class="flex flex-col px-4 py-14 gap-8 xl:px-[clamp(5rem,10vw,15rem)] 2xl:px-[clamp(6rem,16vw,40rem)]">
           <div class="flex flex-col gap-2">
             <h2 class="text-3xl font-bold text-center">Dimensione seu motor com nossos especialistas</h2>
             <p class="text-gray-500 text-center">
@@ -430,8 +430,8 @@
             </p>
           </div>
 
-          <form class="flex flex-col bg-gray-100 border border-gray-200 rounded-lg p-8 gap-4">
-            <div class="flex flex-col gap-4 ">
+          <form class="flex flex-col bg-gray-100 border border-gray-200 rounded-lg p-8 gap-4 lg:max-w-[clamp(44rem,50vw,80rem)] lg:min-w-[clamp(44rem,50vw,80rem)]">
+            <div class="grid lg:grid-cols-2 gap-4 ">
               <div class="flex flex-col gap-1">
                 <label class=" font-semibold text-gray-700">Nome Completo</label>
                 <input class="bg-white border border-gray-300 p-2 px-4 min-w-full rounded" type="text" placeholder="Eng. Carlos Silva" />
@@ -442,7 +442,7 @@
               </div>
             </div>
 
-            <div class="flex flex-col gap-4">
+            <div class="grid lg:grid-cols-2 gap-4">
               <div class="flex flex-col gap-1">
                 <label class="font-semibold text-gray-700">Segmento da Planta</label>
                 <select class="bg-white border border-gray-300 p-2 px-4 min-w-full rounded">
